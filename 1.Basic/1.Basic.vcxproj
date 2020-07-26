@@ -22,10 +22,12 @@
     <ClCompile Include="src\BinarySearch.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\UF.cpp" />
+    <ClCompile Include="src\WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BinarySearch.h" />
     <ClInclude Include="src\UF.h" />
+    <ClInclude Include="src\WeightedQuickUnionUF.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

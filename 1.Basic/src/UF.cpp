@@ -8,26 +8,24 @@ UF::UF(int N)
 {
 	count = N;
 	id.resize(N);
-	for (int i = 0; i < N; i++)
-	{
-		id[i] = i;
-	}
+	for (int i = 0; i < N; i++)	id[i] = i;
 }
 
 void UF::makeUnion(int p, int q)
 {
-	int pID = find(p);
-	int qID = find(q);
+	int pRoot = find(p);
+	int qRoot = find(q);
+	if (pRoot == qRoot) return;
 
-	if (pID == qID) return;
-	for (int i = 0; i < id.size(); i++)
-		if (id[i] == pID) id[i] = qID;
+	id[pRoot] = qRoot;
+
 	count--;
 }
 
 int UF::find(int p)
 {
-	return id[p];
+	while (p != id[p]) p = id[p];
+	return p;
 }
 
 bool UF::connected(int p, int q)

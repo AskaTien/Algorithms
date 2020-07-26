@@ -24,12 +24,18 @@
     <ClCompile Include="src\UF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\WeightedQuickUnionUF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BinarySearch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\UF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WeightedQuickUnionUF.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
