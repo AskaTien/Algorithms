@@ -1,6 +1,8 @@
 #include "BinarySearch.h"
 
-int64_t BinarySearch::IndexOf(int key, std::vector<int> a)
+using namespace std;
+
+int64_t BinarySearch::IndexOf(vector<int> a, int key)
 {
 	size_t lo = 0;
 	size_t hi = a.size() - 1;
@@ -14,16 +16,15 @@ int64_t BinarySearch::IndexOf(int key, std::vector<int> a)
 	return -1;
 }
 
-void BinarySearch::MainTest(std::vector<std::string> args)
+void BinarySearch::MainTest(vector<string> args)
 {
-	std::vector<int> whiteList;
-	std::ifstream textFile(args[0]);
+	ifstream in(args[0]);
+	vector<int> allowList(istream_iterator<int>{in}, {});
+	in.close();
 	
-	int n;
-	while (textFile >> n) whiteList.push_back(n);
-	std::sort(whiteList.begin(), whiteList.end());
-	textFile.close();
+	sort(allowList.begin(), allowList.end());
 
-	while (std::cin >> n) if (IndexOf(n, whiteList) < 0) std::cout << n << std::endl;
+	int key;
+	while (cin >> key) if (IndexOf(allowList, key) == -1) cout << key << endl;
 }
 
