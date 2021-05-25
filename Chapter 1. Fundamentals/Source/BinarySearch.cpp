@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int64_t BinarySearch::IndexOf(vector<int> a, int key)
+int64_t BinarySearch::IndexOf(const vector<int>& a, int key)
 {
 	size_t lo = 0;
 	size_t hi = a.size() - 1;
@@ -16,7 +16,7 @@ int64_t BinarySearch::IndexOf(vector<int> a, int key)
 	return -1;
 }
 
-void BinarySearch::MainTest(vector<string> args)
+void BinarySearch::MainTest(const vector<string>& args)
 {
 	ifstream in(args[0]);
 	vector<int> allowList(istream_iterator<int>{in}, {});

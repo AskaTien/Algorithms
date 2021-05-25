@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Counter.cpp" />
+    <ClCompile Include="Source\Flips.cpp" />
     <ClCompile Include="Source\BinarySearch.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\UF.cpp" />
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Counter.h" />
+    <ClInclude Include="Source\Flips.h" />
     <ClInclude Include="Source\BinarySearch.h" />
     <ClInclude Include="Source\UF.h" />
     <ClInclude Include="Source\WeightedQuickUnionUF.h" />
