@@ -15,6 +15,6 @@ private:
 	~BinarySearch() = delete;
 
 public:
-	static int64_t IndexOf(std::vector<int> a, int key);
-	static void MainTest(std::vector<std::string> args);
+	static int64_t IndexOf(const std::vector<int>& a, int key);
+	static void MainTest(const std::vector<std::string>& args);
 };
