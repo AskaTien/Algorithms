@@ -6,13 +6,15 @@
 class Counter
 {
 public:
-	Counter(std::string id);
+	Counter() = default;
+	Counter(const std::string& id);
 	void Increment();
-	int Tally();
-	friend std::ostream& operator<<(std::ostream& output, const Counter& counter)
+	int Tally() const;
+	friend std::ostream& operator<<(std::ostream& os, const Counter& counter)
 	{
-		return output << counter.count << " " + counter.name;
+		return os << counter.count << " " + counter.name;
 	}
+
 private:
 	std::string name;
 	int count = 0;

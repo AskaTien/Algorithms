@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Counter::Counter(string id) : name(id)
+Counter::Counter(const string& id) : name(id)
 {
 }
 
@@ -11,7 +11,7 @@ void Counter::Increment()
 	count++;
 }
 
-int Counter::Tally()
+int Counter::Tally() const
 {
 	return count;
 }

@@ -1,11 +1,16 @@
-#include "Flips.h"
+#include "FlipsMax.h"
 
 #include <random>
 #include <iostream>
 
 using namespace std;
 
-void Flips::MainTest(const vector<string>& args)
+Counter FlipsMax::Max(const Counter& x, const Counter& y)
+{
+	return x.Tally() > y.Tally() ? x : y;
+}
+
+void FlipsMax::MainTest(const std::vector<std::string>& args)
 {
 	int T = stoi(args[0]);
 	Counter heads("heads");
@@ -18,8 +23,13 @@ void Flips::MainTest(const vector<string>& args)
 		if ((distribution(generator))) heads.Increment();
 		else tails.Increment();
 	}
-	cout << heads << endl;
-	cout << tails << endl;
-	int d = heads.Tally() - tails.Tally();
-	cout << "delta: " << abs(d) << endl;
+
+	if (heads.Tally() == tails.Tally())
+	{
+		cout << "Tie" << endl;
+	}
+	else
+	{
+		cout << Max(heads, tails) << " wins" << endl;
+	}
 }

@@ -11,6 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\FlipsMax.cpp" />
+    <ClCompile Include="Source\Rolls.cpp" />
     <ClCompile Include="Source\Counter.cpp" />
     <ClCompile Include="Source\Flips.cpp" />
     <ClCompile Include="Source\BinarySearch.cpp" />
@@ -19,6 +21,8 @@
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\FlipsMax.h" />
+    <ClInclude Include="Source\Rolls.h" />
     <ClInclude Include="Source\Counter.h" />
     <ClInclude Include="Source\Flips.h" />
     <ClInclude Include="Source\BinarySearch.h" />

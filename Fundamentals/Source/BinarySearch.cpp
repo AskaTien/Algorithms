@@ -1,5 +1,9 @@
 #include "BinarySearch.h"
 
+#include <fstream>
+#include <iostream>
+#include <algorithm>
+
 using namespace std;
 
 int64_t BinarySearch::IndexOf(const vector<int>& a, int key)
