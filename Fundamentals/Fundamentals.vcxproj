@@ -11,6 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Queue.cpp" />
+    <ClCompile Include="Source\Bag.cpp" />
     <ClCompile Include="Source\FlipsMax.cpp" />
     <ClCompile Include="Source\Rolls.cpp" />
     <ClCompile Include="Source\Counter.cpp" />
@@ -19,8 +21,12 @@
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\UF.cpp" />
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
+    <ClCompile Include="Source\Stack.cpp" />
+    <ClCompile Include="Source\Stats.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Queue.h" />
+    <ClInclude Include="Source\Bag.h" />
     <ClInclude Include="Source\FlipsMax.h" />
     <ClInclude Include="Source\Rolls.h" />
     <ClInclude Include="Source\Counter.h" />
@@ -28,6 +34,8 @@
     <ClInclude Include="Source\BinarySearch.h" />
     <ClInclude Include="Source\UF.h" />
     <ClInclude Include="Source\WeightedQuickUnionUF.h" />
+    <ClInclude Include="Source\Stack.h" />
+    <ClInclude Include="Source\Stats.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Resource\largeAllowlist.txt" />
