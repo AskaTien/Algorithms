@@ -3,30 +3,33 @@
 #include <string>
 #include <iostream>
 
-class Counter
+namespace Algorithms
 {
-public:
-	Counter() = default;
-	Counter(const std::string& id) : name(id) 
+	class Counter
 	{
-	}
+	public:
+		Counter() = default;
+		Counter(const std::string& id) : name(id)
+		{
+		}
 
-	void Increment()
-	{
-		count++;
-	}
+		void Increment()
+		{
+			count++;
+		}
 
-	int Tally() const
-	{
-		return count;
-	}
+		int Tally() const
+		{
+			return count;
+		}
 
-	friend std::ostream& operator<<(std::ostream& os, const Counter& counter)
-	{
-		return os << counter.count << " " + counter.name;
-	}
+		friend std::ostream& operator<<(std::ostream& os, const Counter& counter)
+		{
+			return os << counter.count << " " + counter.name;
+		}
 
-private:
-	std::string name;
-	int count = 0;
-};
+	private:
+		std::string name;
+		int count = 0;
+	};
+}

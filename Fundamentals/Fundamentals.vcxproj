@@ -16,9 +16,12 @@
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Evaluate.h" />
+    <ClInclude Include="Source\In.h" />
     <ClInclude Include="Source\Queue.h" />
     <ClInclude Include="Source\Bag.h" />
     <ClInclude Include="Source\FlipsMax.h" />
+    <ClInclude Include="Source\Reverse.h" />
     <ClInclude Include="Source\Rolls.h" />
     <ClInclude Include="Source\Counter.h" />
     <ClInclude Include="Source\Flips.h" />

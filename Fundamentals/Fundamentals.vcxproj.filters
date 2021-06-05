@@ -59,6 +59,15 @@
     <ClInclude Include="Source\Stats.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\In.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Reverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Evaluate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Resource\largeAllowlist.txt">

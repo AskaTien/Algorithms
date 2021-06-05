@@ -8,10 +8,11 @@
 
 int main(int argc, char* argv[])
 {
-	//Flips::MainTest({ argv + 1, argv + argc });
-	//FlipsMax::MainTest({ argv + 1, argv + argc });
-	//Rolls::MainTest({ argv + 1, argv + argc });
-	Stats::MainTest({ argv + 1, argv + argc });
+	Algorithms::BinarySearch::MainTest({ argv + 1, argv + argc });
+	//Algorithms::Flips::MainTest({ argv + 1, argv + argc });
+	//Algorithms::FlipsMax::MainTest({ argv + 1, argv + argc });
+	//Algorithms::Rolls::MainTest({ argv + 1, argv + argc });
+	//Algorithms::Stats::MainTest({ argv + 1, argv + argc });
 
 	return 0;
 }
