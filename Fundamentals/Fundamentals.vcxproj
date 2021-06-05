@@ -11,18 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Queue.cpp" />
-    <ClCompile Include="Source\Bag.cpp" />
-    <ClCompile Include="Source\FlipsMax.cpp" />
-    <ClCompile Include="Source\Rolls.cpp" />
-    <ClCompile Include="Source\Counter.cpp" />
-    <ClCompile Include="Source\Flips.cpp" />
-    <ClCompile Include="Source\BinarySearch.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\UF.cpp" />
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
-    <ClCompile Include="Source\Stack.cpp" />
-    <ClCompile Include="Source\Stats.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Queue.h" />

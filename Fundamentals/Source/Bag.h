@@ -69,7 +69,7 @@ public:
 	using ValueType = Item;
 	using Iterator = Iterator<Bag<Item>>;
 public:
-	Bag() : data(new Item)
+	Bag() : data(new Item[100])
 	{
 	}
 	
