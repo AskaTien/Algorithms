@@ -8,7 +8,7 @@ public:
 	using PointerType = ValueType*;
 	using ReferenceType = ValueType&;
 public:
-	Iterator(PointerType _ptr) : ptr(ptr)
+	Iterator(PointerType _ptr) : ptr(_ptr)
 	{
 	}
 
@@ -50,7 +50,7 @@ public:
 
 	bool operator==(const Iterator& other) const
 	{
-		return ptr == other.ptr();
+		return ptr == other.ptr;
 	}
 
 	bool operator!=(const Iterator& other) const
@@ -69,10 +69,24 @@ public:
 	using ValueType = Item;
 	using Iterator = Iterator<Bag<Item>>;
 public:
-	Bag();
-	void Add(const Item& item);
-	bool IsEmpty();
-	size_t Size();
+	Bag() : data(new Item)
+	{
+	}
+	
+	void Add(const Item& item)
+	{
+		*(data + size++) = item; 
+	}
+
+	bool IsEmpty() const
+	{
+		return size == 0;
+	}
+	
+	size_t Size() const
+	{
+		return size;
+	}
 
 	Iterator begin()
 	{
@@ -81,7 +95,7 @@ public:
 
 	Iterator end()
 	{
-		Iterator(data + size);
+		return Iterator(data + size);
 	}
 
 private:
