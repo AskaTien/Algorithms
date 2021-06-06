@@ -68,6 +68,15 @@
     <ClInclude Include="Source\Evaluate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\FixedCapacityStackOfStrings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FixedCapacityStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResizingArrayStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Resource\largeAllowlist.txt">
@@ -80,6 +89,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="Resource\tinyText.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Resource\tobe.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

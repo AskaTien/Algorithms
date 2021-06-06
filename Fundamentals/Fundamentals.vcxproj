@@ -16,11 +16,14 @@
     <ClCompile Include="Source\WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\FixedCapacityStack.h" />
+    <ClInclude Include="Source\FixedCapacityStackOfStrings.h" />
     <ClInclude Include="Source\Evaluate.h" />
     <ClInclude Include="Source\In.h" />
     <ClInclude Include="Source\Queue.h" />
     <ClInclude Include="Source\Bag.h" />
     <ClInclude Include="Source\FlipsMax.h" />
+    <ClInclude Include="Source\ResizingArrayStack.h" />
     <ClInclude Include="Source\Reverse.h" />
     <ClInclude Include="Source\Rolls.h" />
     <ClInclude Include="Source\Counter.h" />
@@ -36,6 +39,7 @@
     <Text Include="Resource\largeText.txt" />
     <Text Include="Resource\tinyAllowlist.txt" />
     <Text Include="Resource\tinyText.txt" />
+    <Text Include="Resource\tobe.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
